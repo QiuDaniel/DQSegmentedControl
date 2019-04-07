@@ -12,10 +12,10 @@
 		65B1D9B42259D2F800BC8666 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65B1D9B22259D2F800BC8666 /* Main.storyboard */; };
 		65B1D9B62259D2F900BC8666 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65B1D9B52259D2F900BC8666 /* Assets.xcassets */; };
 		65B1D9B92259D2F900BC8666 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65B1D9B72259D2F900BC8666 /* LaunchScreen.storyboard */; };
-		65B1D9CE2259DE0100BC8666 /* DQSegmentedControlEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B1D9CA2259DE0100BC8666 /* DQSegmentedControlEnum.swift */; };
-		65B1D9CF2259DE0100BC8666 /* DQSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B1D9CB2259DE0100BC8666 /* DQSegmentedControl.swift */; };
-		65B1D9D02259DE0100BC8666 /* DQScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B1D9CC2259DE0100BC8666 /* DQScrollView.swift */; };
-		65B1D9D12259DE0100BC8666 /* DQSegmentedControlDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B1D9CD2259DE0100BC8666 /* DQSegmentedControlDelegate.swift */; };
+		65B1D9D72259E32C00BC8666 /* DQSegmentedControlEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B1D9D32259E32B00BC8666 /* DQSegmentedControlEnum.swift */; };
+		65B1D9D82259E32C00BC8666 /* DQSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B1D9D42259E32B00BC8666 /* DQSegmentedControl.swift */; };
+		65B1D9D92259E32C00BC8666 /* DQScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B1D9D52259E32B00BC8666 /* DQScrollView.swift */; };
+		65B1D9DA2259E32C00BC8666 /* DQSegmentedControlDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B1D9D62259E32B00BC8666 /* DQSegmentedControlDelegate.swift */; };
 		E413270CCFF8F55AA1C62C9C /* Pods_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3A1EEC1C8C53DCCECD067D6 /* Pods_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,10 +28,10 @@
 		65B1D9B52259D2F900BC8666 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		65B1D9B82259D2F900BC8666 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		65B1D9BA2259D2F900BC8666 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		65B1D9CA2259DE0100BC8666 /* DQSegmentedControlEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DQSegmentedControlEnum.swift; sourceTree = "<group>"; };
-		65B1D9CB2259DE0100BC8666 /* DQSegmentedControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DQSegmentedControl.swift; sourceTree = "<group>"; };
-		65B1D9CC2259DE0100BC8666 /* DQScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DQScrollView.swift; sourceTree = "<group>"; };
-		65B1D9CD2259DE0100BC8666 /* DQSegmentedControlDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DQSegmentedControlDelegate.swift; sourceTree = "<group>"; };
+		65B1D9D32259E32B00BC8666 /* DQSegmentedControlEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DQSegmentedControlEnum.swift; sourceTree = "<group>"; };
+		65B1D9D42259E32B00BC8666 /* DQSegmentedControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DQSegmentedControl.swift; sourceTree = "<group>"; };
+		65B1D9D52259E32B00BC8666 /* DQScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DQScrollView.swift; sourceTree = "<group>"; };
+		65B1D9D62259E32B00BC8666 /* DQSegmentedControlDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DQSegmentedControlDelegate.swift; sourceTree = "<group>"; };
 		7ACA6664836F5B6120AD3878 /* Pods-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.release.xcconfig"; path = "Target Support Files/Pods-Example/Pods-Example.release.xcconfig"; sourceTree = "<group>"; };
 		C3A1EEC1C8C53DCCECD067D6 /* Pods_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -86,7 +86,7 @@
 		65B1D9AD2259D2F800BC8666 /* Example */ = {
 			isa = PBXGroup;
 			children = (
-				65B1D9C92259DE0100BC8666 /* DQSegmentedControl */,
+				65B1D9D22259E32B00BC8666 /* DQSegmentedControl */,
 				65B1D9AE2259D2F800BC8666 /* AppDelegate.swift */,
 				65B1D9B02259D2F800BC8666 /* ViewController.swift */,
 				65B1D9B22259D2F800BC8666 /* Main.storyboard */,
@@ -97,13 +97,13 @@
 			path = Example;
 			sourceTree = "<group>";
 		};
-		65B1D9C92259DE0100BC8666 /* DQSegmentedControl */ = {
+		65B1D9D22259E32B00BC8666 /* DQSegmentedControl */ = {
 			isa = PBXGroup;
 			children = (
-				65B1D9CA2259DE0100BC8666 /* DQSegmentedControlEnum.swift */,
-				65B1D9CB2259DE0100BC8666 /* DQSegmentedControl.swift */,
-				65B1D9CC2259DE0100BC8666 /* DQScrollView.swift */,
-				65B1D9CD2259DE0100BC8666 /* DQSegmentedControlDelegate.swift */,
+				65B1D9D32259E32B00BC8666 /* DQSegmentedControlEnum.swift */,
+				65B1D9D42259E32B00BC8666 /* DQSegmentedControl.swift */,
+				65B1D9D52259E32B00BC8666 /* DQScrollView.swift */,
+				65B1D9D62259E32B00BC8666 /* DQSegmentedControlDelegate.swift */,
 			);
 			name = DQSegmentedControl;
 			path = ../../DQSegmentedControl;
@@ -207,11 +207,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				65B1D9B12259D2F800BC8666 /* ViewController.swift in Sources */,
-				65B1D9CF2259DE0100BC8666 /* DQSegmentedControl.swift in Sources */,
+				65B1D9D82259E32C00BC8666 /* DQSegmentedControl.swift in Sources */,
 				65B1D9AF2259D2F800BC8666 /* AppDelegate.swift in Sources */,
-				65B1D9CE2259DE0100BC8666 /* DQSegmentedControlEnum.swift in Sources */,
-				65B1D9D12259DE0100BC8666 /* DQSegmentedControlDelegate.swift in Sources */,
-				65B1D9D02259DE0100BC8666 /* DQScrollView.swift in Sources */,
+				65B1D9D72259E32C00BC8666 /* DQSegmentedControlEnum.swift in Sources */,
+				65B1D9DA2259E32C00BC8666 /* DQSegmentedControlDelegate.swift in Sources */,
+				65B1D9D92259E32C00BC8666 /* DQScrollView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

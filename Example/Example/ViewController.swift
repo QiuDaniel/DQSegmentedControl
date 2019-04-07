@@ -17,8 +17,8 @@ class ViewController: UIViewController {
         return label
     }()
     private lazy var segmentControl1: DQSegmentedControl = {
-        let control = DQSegmentedControl(frame: CGRect(x: 0, y: 34, width: UIScreen.main.bounds.width, height: 60))
-        control.sectionTitles = titles1
+        let control = DQSegmentedControl(titles1)
+        control.frame = CGRect(x: 0, y: 34, width: UIScreen.main.bounds.width, height: 60)
         control.delegate = self
         control.titleTextAttributes = [.font: UIFont.systemFont(ofSize: 16),.foregroundColor:UIColor.black]
         control.selectedTitleTextAttributes = [.font: UIFont.boldSystemFont(ofSize: 16),.foregroundColor:UIColor.red]
