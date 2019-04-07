@@ -1,3 +1,16 @@
-PODFILE CHECKSUM: ca1ae1df9b3e6771a1eac66c8265140fd52ecf43
+PODS:
+  - DQSegmentedControl (0.0.3)
+
+DEPENDENCIES:
+  - DQSegmentedControl
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - DQSegmentedControl
+
+SPEC CHECKSUMS:
+  DQSegmentedControl: ee8ed02cdf7276649d7774d06b9c3543dd8db566
+
+PODFILE CHECKSUM: 52764d9aff64ee21d44e3b974b2eec6b0b0c5e7a
 
 COCOAPODS: 1.6.1

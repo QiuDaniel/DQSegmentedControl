@@ -10,7 +10,7 @@ def pods
 
 #Swift
 
-#pod 'DQSegmentedControl'
+    pod 'DQSegmentedControl'
 
 end
 

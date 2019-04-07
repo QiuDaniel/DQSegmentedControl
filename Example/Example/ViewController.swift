@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import DQSegmentedControl
 
 class ViewController: UIViewController {
     private lazy var showLabel: UILabel = {
