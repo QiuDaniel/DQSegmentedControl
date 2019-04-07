@@ -120,7 +120,7 @@ public class DQSegmentedControl: UIControl {
     
     // MARK: - LifeCycle
     
-    override init(frame: CGRect) {
+    override public init(frame: CGRect) {
         super.init(frame: frame)
         setup()
     }
@@ -130,9 +130,10 @@ public class DQSegmentedControl: UIControl {
         setup()
     }
     
-    init(_ sectionTitles: Array<Any>) {
+    public init(_ sectionTitles: Array<Any>) {
         super.init(frame: .zero)
         self.sectionTitles = sectionTitles
+        setup()
     }
     
     
