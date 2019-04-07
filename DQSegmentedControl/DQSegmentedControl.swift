@@ -8,7 +8,7 @@
 
 import UIKit
 
-open class DQSegmentedControl: UIControl {
+public class DQSegmentedControl: UIControl {
     
     //MARK: - Property
 
@@ -111,7 +111,7 @@ open class DQSegmentedControl: UIControl {
     private let kBoxLeftOffSet: CGFloat = 6.0
     private let kBoxGapText: CGFloat = 2.0
     
-    override var frame: CGRect {
+    override public var frame: CGRect {
         didSet {
             super.frame = frame
             updateSegmentsRect()
@@ -146,7 +146,7 @@ open class DQSegmentedControl: UIControl {
         self.isOpaque = false
     }
     
-    override func willMove(toSuperview newSuperview: UIView?) {
+    override public func willMove(toSuperview newSuperview: UIView?) {
         if newSuperview == nil {
             return
         }
@@ -155,12 +155,12 @@ open class DQSegmentedControl: UIControl {
         }
     }
     
-    override func layoutSubviews() {
+    override public func layoutSubviews() {
         super.layoutSubviews()
         updateSegmentsRect()
     }
     
-    override func draw(_ rect: CGRect) {
+    override public func draw(_ rect: CGRect) {
         backgroundColor?.setFill()
         UIRectFill(self.bounds)
         selectionIndicatorStripLayer.backgroundColor = selectionIndicatorColor.cgColor
@@ -233,7 +233,7 @@ open class DQSegmentedControl: UIControl {
     
     // MARK: - Touch
     
-    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+    override public func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         let touch = (touches as NSSet).anyObject() as AnyObject
         let touchLocation = touch.location(in: self)
         
