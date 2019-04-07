@@ -1,0 +1,21 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+platform:ios,'8.0'
+
+def pods
+    use_frameworks!
+# ignore all warnings from all pods
+    inhibit_all_warnings!
+    inherit! :search_paths
+
+#Swift
+
+    pod 'DQSegmentedControl'
+
+end
+
+target 'Example' do
+	pods
+end
+
+
