@@ -8,13 +8,13 @@
 
 import UIKit
 
-class DQSegmentedControl: UIControl {
+open class DQSegmentedControl: UIControl {
     
     //MARK: - Property
 
-    open weak var delegate: DQSegmentedControlDelegate?
+    public weak var delegate: DQSegmentedControlDelegate?
     
-    var sectionTitles: Array<Any> {
+    public var sectionTitles: Array<Any> {
         get {
             return titles
         }
@@ -25,7 +25,7 @@ class DQSegmentedControl: UIControl {
         }
     }
     
-    var selectedSegmentIndex: Int {
+    public var selectedSegmentIndex: Int {
         get {
             return selectedIndex
         }
@@ -36,7 +36,7 @@ class DQSegmentedControl: UIControl {
         }
     }
     
-    var selectionIndicatorLocation:DQSegmentedControlSelectionIndicatorLocation = .down {
+    public var selectionIndicatorLocation:DQSegmentedControlSelectionIndicatorLocation = .down {
         willSet {
             self.selectionIndicatorLocation = newValue
             if newValue == .none {
@@ -48,21 +48,21 @@ class DQSegmentedControl: UIControl {
     /*
     指示器颜色
     */
-    var selectionIndicatorColor: UIColor = UIColor(red: 52/255.0, green: 181/255.0, blue: 229/255.0, alpha: 1.0)
+    public var selectionIndicatorColor: UIColor = UIColor(red: 52/255.0, green: 181/255.0, blue: 229/255.0, alpha: 1.0)
     
     /*
     填充背景颜色，只在selectionStyle = .box起作用
     */
-    var selectionIndicatorBoxColor: UIColor = UIColor(red: 52/255.0, green: 181/255.0, blue: 229/255.0, alpha: 1.0)
+    public var selectionIndicatorBoxColor: UIColor = UIColor(red: 52/255.0, green: 181/255.0, blue: 229/255.0, alpha: 1.0)
     /*
     填充背景是否带弧度, default = true, 只在selectionStyle = .box起作用
     */
-    var isSelectionIndicatorBoxRadius = true
+    public var isSelectionIndicatorBoxRadius = true
     /*
     指示器高度，default = 5，当selectionStyle != .box起作用
     */
-    var selectionIndicatorHeight:CGFloat = 5.0
-    var selectionStyle: DQSegmentedControlSelectionStyle = .textWidthStripe {
+    public var selectionIndicatorHeight:CGFloat = 5.0
+    public var selectionStyle: DQSegmentedControlSelectionStyle = .textWidthStripe {
         willSet {
             self.selectionStyle = newValue
             if newValue == .box {
@@ -71,11 +71,11 @@ class DQSegmentedControl: UIControl {
         }
     }
     
-    var segmentWidthStyle: DQSegmentedControlSegmentWidthStyle = .fixed
+    public var segmentWidthStyle: DQSegmentedControlSegmentWidthStyle = .fixed
     /*
      Inset left and right edges of segments.
     */
-    var segmentEdgeInset: UIEdgeInsets = UIEdgeInsets(top: 0, left: 5, bottom: 0, right: 5)
+    public var segmentEdgeInset: UIEdgeInsets = UIEdgeInsets(top: 0, left: 5, bottom: 0, right: 5)
     
     /*
      Edge insets for the selection indicator.
@@ -85,17 +85,17 @@ class DQSegmentedControl: UIControl {
      
      selectionIndicatorLocation = .down, top edge insets不起作用
     */
-    var selectionIndicatorEdgeInsets = UIEdgeInsets(top: 0.0, left: 0.0, bottom: 0.0, right: 0.0)
+    public var selectionIndicatorEdgeInsets = UIEdgeInsets(top: 0.0, left: 0.0, bottom: 0.0, right: 0.0)
     
     /*
     默认文字设置
     */
-    var titleTextAttributes:[NSAttributedString.Key : Any] = [.font: UIFont.systemFont(ofSize: 19),
+    public var titleTextAttributes:[NSAttributedString.Key : Any] = [.font: UIFont.systemFont(ofSize: 19),
                                                               .foregroundColor: UIColor.black]
     /*
     选中文字设置
     */
-    var selectedTitleTextAttributes:[NSAttributedString.Key : Any] = [.font: UIFont.systemFont(ofSize: 19),
+    public var selectedTitleTextAttributes:[NSAttributedString.Key : Any] = [.font: UIFont.systemFont(ofSize: 19),
                                                                       .foregroundColor: UIColor.black]
     
     
