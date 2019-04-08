@@ -26,6 +26,7 @@ class ViewController: UIViewController {
         control.selectionIndicatorHeight = 2
         control.selectionIndicatorColor = UIColor.red
         control.selectionIndicatorEdgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: -10, right: 0);
+        control.selectedSegmentIndex = 2
         return control
     }()
     
