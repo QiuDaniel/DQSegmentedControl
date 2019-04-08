@@ -37,7 +37,9 @@ view.addSubview(control)
 ```
 
 Included is a demo project showing how to fully customise the control.
+![Show](https://github.com/QiuDaniel/DQSegmentedControl/blob/master/snap.gif)
 
+## Special Thanks to [@HeshamMegid](http://twitter.com/HeshamMegid), the project refer to his HMSegmentedControl much more.
 
 # License
 
