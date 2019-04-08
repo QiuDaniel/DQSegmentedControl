@@ -32,6 +32,7 @@ public class DQSegmentedControl: UIControl {
         
         set {
             selectedIndex = newValue
+            setSelectedSegment(selectedIndex, animated:false)
             self.setNeedsDisplay()
         }
     }
@@ -437,7 +438,7 @@ public class DQSegmentedControl: UIControl {
     
     // MARK: - Index Chage
     
-    private func setSelectedSegment(_ index: Int, animated: Bool, notify: Bool? = false) {
+    public func setSelectedSegment(_ index: Int, animated: Bool, notify: Bool? = false) {
         selectedSegmentIndex = index
         if index < 0 {
             selectionIndicatorStripLayer.removeFromSuperlayer()
