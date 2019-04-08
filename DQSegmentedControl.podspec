@@ -9,7 +9,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "DQSegmentedControl"
-  spec.version      = "0.0.5"
+  spec.version      = "0.0.6"
   spec.summary      = "A drop-in replacement for UISegmentedControl."
   spec.description  = <<-DESC
   A drop-in replacement for UISegmentedControl mimicking the style of the segmented control
