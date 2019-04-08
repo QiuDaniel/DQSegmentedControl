@@ -1,5 +1,5 @@
 PODS:
-  - DQSegmentedControl (0.0.5)
+  - DQSegmentedControl (0.0.6)
 
 DEPENDENCIES:
   - DQSegmentedControl
@@ -9,7 +9,7 @@ SPEC REPOS:
     - DQSegmentedControl
 
 SPEC CHECKSUMS:
-  DQSegmentedControl: 963663f3a45a03305ebac88df6b4cdf61b40f72b
+  DQSegmentedControl: 8b69a7138f7b42310f546b2f0148c7d175b6004f
 
 PODFILE CHECKSUM: 52764d9aff64ee21d44e3b974b2eec6b0b0c5e7a
 
