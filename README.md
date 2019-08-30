@@ -16,7 +16,11 @@ A drop-in replacement for UISegmentedControl mimicking the style of the segmente
 The easiest way of installing DQSegmentedControl is via [CocoaPods](http://cocoapods.org/). 
 
 ```
+Normal:
 pod 'DQSegmentedControl'
+
+Support RxSwift:
+pod 'DQSegmentedControl/Rx'
 ```
 
 # Usage
