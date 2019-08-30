@@ -29,7 +29,7 @@ extension Reactive where Base: DQSegmentedControl {
         return DQSegmentedControlDelegateProxy.proxy(for: base)
     }
     
-    var didSelectedAt: ControlEvent<Int> {
+    public var didSelectedAt: ControlEvent<Int> {
         let source: Observable<Int> = delegate.methodInvoked(#selector(DQSegmentedControlDelegate.segmentControl(_:didSelectedAt:))).map { a in
             return try castOrThrow(Int.self, a[1])
         }
