@@ -32,7 +32,7 @@ Pod::Spec.new do |spec|
   end
 
   spec.subspec "Rx" do |rx|
-    rx.source_files = "DQSegmentedControl"
+    rx.source_files = "DQSegmentedControl", "DQSegmentedControl/Rx"
     rx.dependency 'RxSwift', '>=4.5.0'
     rx.dependency 'RxCocoa', '>=4.5.0'
   end
