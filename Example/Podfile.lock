@@ -1,16 +1,30 @@
 PODS:
-  - DQSegmentedControl (0.0.6)
+  - DQSegmentedControl/Rx (0.1.1):
+    - RxCocoa (>= 4.5.0)
+    - RxSwift (>= 4.5.0)
+  - RxCocoa (5.0.0):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxRelay (5.0.0):
+    - RxSwift (~> 5)
+  - RxSwift (5.0.0)
 
 DEPENDENCIES:
-  - DQSegmentedControl
+  - DQSegmentedControl/Rx
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - DQSegmentedControl
+    - RxCocoa
+    - RxRelay
+    - RxSwift
 
 SPEC CHECKSUMS:
-  DQSegmentedControl: 8b69a7138f7b42310f546b2f0148c7d175b6004f
+  DQSegmentedControl: 2b72af2eb23871a43515a610b790c8b529085ec1
+  RxCocoa: fcf32050ac00d801f34a7f71d5e8e7f23026dcd8
+  RxRelay: 4f7409406a51a55cd88483f21ed898c234d60f18
+  RxSwift: 8b0671caa829a763bbce7271095859121cbd895f
 
-PODFILE CHECKSUM: 52764d9aff64ee21d44e3b974b2eec6b0b0c5e7a
+PODFILE CHECKSUM: 3b1cfc708d97631fc6f5f0513fbce9ffef418d3c
 
-COCOAPODS: 1.6.1
+COCOAPODS: 1.7.5

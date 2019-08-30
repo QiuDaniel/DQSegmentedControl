@@ -8,6 +8,10 @@
 
 import UIKit
 import DQSegmentedControl
+import RxSwift
+
+private let titles1 = ["大前天","前天", "昨天", "今天", "明天", "后天", "大后天"]
+private let titles2 = ["星期一","星期二", "星期三", "星期四", "星期五", "星期六", "星期天"]
 
 class ViewController: UIViewController {
     private lazy var showLabel: UILabel = {
@@ -20,7 +24,6 @@ class ViewController: UIViewController {
     private lazy var segmentControl1: DQSegmentedControl = {
         let control = DQSegmentedControl(titles1)
         control.frame = CGRect(x: 0, y: 34, width: UIScreen.main.bounds.width, height: 60)
-        control.delegate = self
         control.titleTextAttributes = [.font: UIFont.systemFont(ofSize: 16),.foregroundColor:UIColor.black]
         control.selectedTitleTextAttributes = [.font: UIFont.boldSystemFont(ofSize: 16),.foregroundColor:UIColor.red]
         control.selectionIndicatorHeight = 2
@@ -42,8 +45,7 @@ class ViewController: UIViewController {
         return control
     }()
     
-    private let titles1 = ["大前天","前天", "昨天", "今天", "明天", "后天", "大后天"]
-    private let titles2 = ["星期一","星期二", "星期三", "星期四", "星期五", "星期六", "星期天"]
+    private let disposeBag = DisposeBag()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -51,20 +53,21 @@ class ViewController: UIViewController {
         view.addSubview(self.segmentControl2)
         view.addSubview(self.showLabel)
         self.showLabel.center = view.center
+        segmentControl1.rx.didSelectedAt.subscribe(onNext: { [weak self] index in
+            guard let `self` = self else { return }
+            print("selectedAt======>\(index)")
+            self.showLabel.text = titles1[index]
+        }).disposed(by: disposeBag)
     }
     
 }
 
 extension ViewController: DQSegmentedControlDelegate {
-    func segmentControl(control: DQSegmentedControl, didSelectedAt index: Int) {
+    func segmentControl(_ control: DQSegmentedControl, didSelectedAt index: Int) {
         print("selectedAt======>\(index)")
-        var title = ""
-        if control == self.segmentControl1 {
-            title = titles1[index]
-        } else if control == self.segmentControl2 {
-            title = titles2[index]
-        }
-        showLabel.text = title
+        showLabel.text = titles2[index]
     }
 }
+
+
 
