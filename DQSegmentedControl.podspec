@@ -9,7 +9,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "DQSegmentedControl"
-  spec.version      = "0.1.0"
+  spec.version      = "0.1.1"
   spec.summary      = "A drop-in replacement for UISegmentedControl."
   spec.description  = <<-DESC
   A drop-in replacement for UISegmentedControl mimicking the style of the segmented control
@@ -32,12 +32,9 @@ Pod::Spec.new do |spec|
   end
 
   spec.subspec "Rx" do |rx|
-    rx.source_files = "DQSegmentedControl/*.swift", "DQSegmentedControl/Rx/*.swift"
+    rx.source_files = "DQSegmentedControl"
     rx.dependency 'RxSwift', '>=4.5.0'
     rx.dependency 'RxCocoa', '>=4.5.0'
   end
-
-  # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  # spec.dependency "JSONKit", "~> 1.4"
 
 end
