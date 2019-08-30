@@ -8,11 +8,9 @@
 
 import Foundation
 
+@objc
 public protocol DQSegmentedControlDelegate : NSObjectProtocol {
-    func segmentControl(control: DQSegmentedControl, didSelectedAt index: Int)
+    @objc
+    optional func segmentControl(_ control: DQSegmentedControl, didSelectedAt index: Int)
 }
 
-
-extension DQSegmentedControlDelegate {
-    public func segmentControl(control: DQSegmentedControl, didSelectedAt index: Int) {}
-}

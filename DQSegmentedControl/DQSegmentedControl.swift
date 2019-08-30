@@ -518,6 +518,7 @@ public class DQSegmentedControl: UIControl {
         if self.superview != nil {
             self.sendActions(for:.valueChanged)
         }
-        self.delegate?.segmentControl(control: self, didSelectedAt: index)
+        guard let function = self.delegate?.segmentControl(_:didSelectedAt:) else { return }
+        function(self, index)
     }
 }
