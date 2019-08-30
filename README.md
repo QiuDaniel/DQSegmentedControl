@@ -5,7 +5,7 @@ A drop-in replacement for UISegmentedControl mimicking the style of the segmente
 - Supports text
 - Supports advanced title styling with text attributes for font, color, kerning, shadow, etc.
 - Supports selection indicator both on top and bottom
-- Works with ARC and iOS >= 8
+- Works with ARC and iOS >= 9
 
 ## Todo
 - Supports images
@@ -35,6 +35,16 @@ control.selectionIndicatorEdgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: -10
 view.addSubview(control)
 
 ```
+
+# RxSwift
+
+Now SegmentedControlDelegate supports RxSwift, It can be use looks like:
+```  Swift
+    segmentControl.rx.didSelectedAt.subscribe(onNext: { index in
+        print("selectedAt======>\(index)")
+    }).disposed(by: disposeBag)
+```
+
 
 Included is a demo project showing how to fully customise the control.
 ![Show](https://github.com/QiuDaniel/DQSegmentedControl/blob/master/snap.gif)
